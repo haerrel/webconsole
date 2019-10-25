@@ -1,0 +1,43 @@
+<html>
+
+<body>
+    <div id="loading-spinner">
+        Connecting...
+    </div>
+    <div id="console" style="display: none;">
+        <div>
+            <textarea id="output"></textarea>
+        </div>
+        <div>
+            <input id="prompt" placeholder="Command"> </input>
+        </div>
+    </div>
+    <script src="client.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script>
+        const input = $("#prompt");
+        const output = $("#output")
+        
+        const webconsole_client = new Client(
+            "http://localhost:3000",
+            function() {
+                $("#loading-spinner").hide();
+                $("#console").show()
+            },
+            function(data) {
+                output.append(data);
+            }
+        );
+        
+        input.on("keyup", function (e) {
+            if (e.keyCode === 13) {
+                const command = input.val() + "\n";
+                webconsole_client.send(command);
+                input.val("");
+            }
+        });
+    </script>
+</body>
+
+</html>

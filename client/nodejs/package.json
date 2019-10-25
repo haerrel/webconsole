@@ -1,0 +1,22 @@
+{
+  "name": "websocket-client",
+  "version": "1.0.0",
+  "description": "Javascript client to access the webconsole server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haerrel/webconsole.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haerrel/webconsole/issues"
+  },
+  "homepage": "https://github.com/haerrel/webconsole#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

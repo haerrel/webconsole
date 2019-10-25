@@ -8,7 +8,8 @@ Simple express.js based webserver hosting a static index.html using the Javascri
 ## Integration in your project
 This is thought to be an example of how to use the Webconsole-Client. See [index.html](./public/index.html) for how to use/integrate the client module in your project.
 
-<pre><code>
+``` js
+<script src="client.js"></script>
 var webconsole_client = new Client(
     "http://my-backend:port",
     function() {
@@ -21,4 +22,4 @@ var webconsole_client = new Client(
 );
 
 webconsole_client.send("mycommand")
-</code></pre>
+```

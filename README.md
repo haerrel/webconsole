@@ -1,5 +1,5 @@
 # Web Console
-Ever feeled the need to make your command line executables easier accessable? This could be for example for showcasing/demonstration purposes of your newly crafted executable.
+Ever feeled the need to make your command line executables easier accessable? This could be interesting for showcasing/demonstration purposes of your newly crafted executable.
 
 ## About
 

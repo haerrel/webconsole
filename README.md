@@ -3,7 +3,7 @@ Ever feeled the need to make your command line executables easier accessable? Th
 
 ## About
 
-Integrate and use binary executables in your web applications. Sends commands to a remote system, which is hosting the executable binary, and receives the output. Data transfer is based on WebSockets for real-time experience.
+Integrate and use binary executables in your web applications. Sends console commands to a remote system, which is hosting the executable binary, and receives the output. Data transfer is based on WebSockets for real-time experience.
 
 ## Components
 * [Server](./server)
